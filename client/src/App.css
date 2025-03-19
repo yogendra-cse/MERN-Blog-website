@@ -1,0 +1,111 @@
+/* General Styling */
+main {
+  padding: 30px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+a {
+  text-decoration: none;
+  color: green;
+  font-size: 25px;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+#title {
+  text-decoration: none;
+}
+/* Navigation */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+nav a {
+  opacity: 0.5;
+}
+
+/* Post Layout */
+.post {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-bottom: 50px;
+  align-items: center; /* Centers text vertically with the image */
+}
+
+/* Image Wrapper */
+.image-link {
+  display: block;
+  width: 50%; /* Matches image width */
+}
+
+.post img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Post Text Section */
+.texts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers text vertically */
+}
+
+/* Post Title */
+h2 {
+  margin: 0;
+  font-size: 23px;
+}
+
+.title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.title-link:hover {
+  text-decoration: underline;
+}
+
+/* Post Info */
+div.post p.info {
+  margin: 6px 0;
+  color: #888;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+  align-items: center; /* Ensures inline items (author, date) align properly */
+}
+
+div.post p.info a.author {
+  color: #333;
+}
+
+div.post p.info time {
+  margin-left: 30px;
+}
+
+/* Post Summary */
+div.post p.summary {
+  font-size: 18px;
+  margin: 12px 0;
+  line-height: 1.9rem;
+}
+
+/* Input Styling */
+input {
+  width: 70%;
+}
